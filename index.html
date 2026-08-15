@@ -1,103 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - GitHub Profile</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        h1, h2, h3 {
-            font-weight: 600;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-top: 1em;
-            margin-bottom: 0.5em;
-        }
-        h3 {
-            font-size: 1.2em;
-            margin-top: 0.8em;
-            margin-bottom: 0.3em;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        img {
-            max-width: 300px;
-            border-radius: 50%; /* Make it a circle */
-            float: left; /* Align image to the left */
-            margin-right: 20px; /* Add some spacing */
-            margin-bottom: 20px;
-        }
-        .clearfix::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 0.3em;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arjun CB — Senior Software Developer, Game &amp; XR / AI Integration</title>
+<meta name="description" content="Arjun CB — Senior Software Developer specializing in Game &amp; XR development with applied AI integration. Unity, Unreal, Phaser, computer vision, and enterprise-scale delivery.">
+
+<meta property="og:title" content="Arjun CB — Game & XR Developer / AI Integration">
+<meta property="og:description" content="Senior Software Developer specializing in Game & XR development with applied AI integration.">
+<meta property="og:image" content="assets/img/profile-square.jpg">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container clearfix">
-        <img src="CB.png" alt="Your Profile Picture">
 
-        <h1>Arjun CB</h1>
-        <p>Software Engineer</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2>About Me</h2>
-        <p>A seasoned professional passionate about harnessing cutting-edge technologies to create innovative solutions with high social impact.</p>
-        <p>I'm a passionate software developer with a strong background in areas like ERP (Enterprise Resource Planning), surveillance using computer
-            vision, and VR (Virtual Reality) simulations. I am particularly keen on pursuing research in areas of AI like autonomous robotics, bio-mechanics, 
-            rehabilitation technologies, transformational games, multi-agent control, and perception to create a more sustainable, inclusive, and efficient world.</p>
+<div class="bg-layer" aria-hidden="true">
+  <div class="orb orb-violet"></div>
+  <div class="orb orb-cyan"></div>
+  <svg class="grain" xmlns="http://www.w3.org/2000/svg">
+    <filter id="noiseFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#noiseFilter)"/>
+  </svg>
+</div>
 
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: C++, C#, Python</li>
-            <li>Databases: MySQL, PostgreSQL</li>
-            <li>Tools: Git, Docker, Elasticsearch</li>
-            <li>Other: Unity, Unreal</li>
-        </ul>
+<header class="nav-wrap">
+  <nav class="nav glass" aria-label="Primary">
+    <a href="#top" class="nav-mark" aria-label="Arjun CB, home">A<span class="nav-mark-accent">CB</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-ghost magnetic" href="assets/Arjun_CB_Resume.pdf" download>
+      <span>Résumé</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v9m0 0L3.5 6.5M7 10l3.5-3.5M2 12.5h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
 
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://www.amrita.edu/project/medsim/">MEDSIM Medical VR Simulations</a> - Medical VR simulations in COVID-related scenarios, useful for process training and compliance of medical personnel.</li>
-            <li><a href="https://www.amrita.edu/project/olabs/">OLABS Educational Simulations</a> - Educational simulations (VR and web-based) of school-level NCERT science experiements from classes 5 to 10.</li>
-            <li><a href="projectTRIPTI-github-link">Tripti</a> - A JIT (Just-In-Time) approach for resources NGOs and relief camps require. Envisioned during the Kerala-Karnataka floods.</li>
-            <li><a href="projectY5OBJ-github-link">Vehicle Identification</a> - with YOLOv5 Object Detection, KNN-Color Histogram, Elasticsearch, Django and Python.
-                The project aims to identify vehicles like cars, trucks, bikes, buses, etc., based on their type, color, and make.</li>
-        </ul>
+<main id="top">
 
-        <h2>Contact</h2>
-        <ul>
-            <li><a href="mailto:arjun.c.b.1994@gmail.com">Email Me</a></li>
-            <li><a href="https://github.com/ArjunCB">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/arjun-cb-5a77b284/">LinkedIn</a></li>
-        </ul>
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">// 07 YRS · GAME · XR · AI SYSTEMS</p>
+        <h1 class="hero-title">Arjun <span class="hero-title-accent">CB</span></h1>
+        <p class="hero-role">Senior Software Developer — Game &amp; XR Development, AI Integration</p>
+        <p class="hero-desc">I build gamified products, VR training simulations, and applied ML/CV systems — from Unity and Unreal viewports to enterprise-scale SAP delivery. Currently shipping gamification for global clients at Snapwork Technologies.</p>
+
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary magnetic">
+            <span>View work</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10m0 0L8 3m4 4L8 11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline magnetic"><span>Get in touch</span></a>
+        </div>
+
+        <div class="hero-stats" role="list">
+          <div class="hero-stat" role="listitem"><span class="hero-stat-num">7+</span><span class="hero-stat-label">years shipping software</span></div>
+          <div class="hero-stat" role="listitem"><span class="hero-stat-num">3</span><span class="hero-stat-label">domains — game, XR, enterprise</span></div>
+          <div class="hero-stat" role="listitem"><span class="hero-stat-num">6</span><span class="hero-stat-label">shipped simulations &amp; tools</span></div>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-frame glass spotlight" data-spotlight>
+          <div class="panel-frame-inner">
+            <picture>
+              <source srcset="assets/img/profile-portrait.webp" type="image/webp">
+              <img src="assets/img/profile-portrait.jpg" alt="Portrait of Arjun CB" class="hero-photo" width="708" height="944">
+            </picture>
+            <div class="scanline" aria-hidden="true"></div>
+          </div>
+          <div class="pill pill-available" id="availPill">
+            <span class="pill-dot" aria-hidden="true"></span>
+            Available for Q1&nbsp;2027 contracts
+          </div>
+          <div class="pill pill-coords"><span class="mono">ERNAKULAM, IN · 9.98°N 76.34°E</span></div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <section class="section" id="stack">
+    <div class="section-head">
+      <p class="eyebrow">// 01 SYSTEMS</p>
+      <h2 class="section-title">Runtime status</h2>
+    </div>
+
+    <div class="bento">
+      <article class="bento-cell bento-about glass spotlight" data-spotlight>
+        <h3 class="cell-title">About</h3>
+        <p class="cell-text">I sit at the intersection of game engines, applied machine learning, and enterprise software. My work spans gamified client products, medical &amp; educational VR training simulations, computer-vision tooling, and — earlier in my career — extensibility for SAP's ERP suite. I care most about the moments where AI actually improves an interactive experience, not just decorates it.</p>
+        <div class="cell-tags">
+          <span class="tag">Game Dev</span><span class="tag">XR / VR</span><span class="tag">Applied AI</span><span class="tag">Enterprise Software</span>
+        </div>
+      </article>
+
+      <article class="bento-cell bento-clock glass spotlight" data-spotlight>
+        <div class="clock-head">
+          <span class="mono cell-eyebrow">LOCAL TIME</span>
+          <span class="clock-icon" id="dayNightIcon" aria-hidden="true">☀</span>
+        </div>
+        <div class="clock-time mono" id="liveClock">--:--:--</div>
+        <div class="clock-sub mono" id="liveDate">Ernakulam, IN · IST (UTC+5:30)</div>
+      </article>
+
+      <article class="bento-cell bento-focus glass spotlight" data-spotlight>
+        <span class="mono cell-eyebrow">FOCUS AREAS</span>
+        <ul class="focus-list">
+          <li><span class="focus-dot dot-violet"></span>Game &amp; XR engineering</li>
+          <li><span class="focus-dot dot-cyan"></span>Applied AI / computer vision</li>
+          <li><span class="focus-dot dot-slate"></span>Enterprise-scale delivery</li>
+        </ul>
+      </article>
+
+      <article class="bento-cell bento-badges glass spotlight" data-spotlight>
+        <span class="mono cell-eyebrow">TECH STACK</span>
+        <div class="badge-groups">
+          <div class="badge-group">
+            <span class="badge-group-label">Game &amp; XR</span>
+            <div class="badge-row">
+              <button class="badge" data-tip="Primary game engine">Unity 3D</button>
+              <button class="badge" data-tip="Team-led project engine">Unreal 5</button>
+              <button class="badge" data-tip="2D web game framework">Phaser</button>
+              <button class="badge" data-tip="VR hand-tracking &amp; interaction">Oculus SDK</button>
+              <button class="badge" data-tip="WebGL 3D">Three.js</button>
+            </div>
+          </div>
+          <div class="badge-group">
+            <span class="badge-group-label">AI &amp; Computer Vision</span>
+            <div class="badge-row">
+              <button class="badge" data-tip="Deep learning framework">TensorFlow</button>
+              <button class="badge" data-tip="Deep learning framework">PyTorch</button>
+              <button class="badge" data-tip="Real-time object detection">YOLOv5</button>
+              <button class="badge" data-tip="Vision toolkit">OpenCV</button>
+            </div>
+          </div>
+          <div class="badge-group">
+            <span class="badge-group-label">Web &amp; Enterprise</span>
+            <div class="badge-row">
+              <button class="badge" data-tip="Frontend framework">Svelte</button>
+              <button class="badge" data-tip="Python API framework">Flask</button>
+              <button class="badge" data-tip="SAP UI framework">SAP UI5</button>
+              <button class="badge" data-tip="ERP scripting language">ABAP</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="section-head">
+      <p class="eyebrow">// 02 TIMELINE</p>
+      <h2 class="section-title">Experience</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="tl-item">
+        <div class="tl-index mono">01</div>
+        <div class="tl-card glass spotlight" data-spotlight>
+          <div class="tl-card-head">
+            <div>
+              <h3 class="tl-role">Senior Game Developer</h3>
+              <p class="tl-org">Snapwork Technologies · Ernakulam, IN</p>
+            </div>
+            <span class="tl-date mono">Jun 2025 — Present</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Building gamified applications for enterprise client GCash (Philippines) — celebratory events, year-end reviews, seasonal campaigns.</li>
+            <li>Shipping with Svelte, Phaser, Contentful, and Lottie for real-time, content-managed game experiences.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-index mono">02</div>
+        <div class="tl-card glass spotlight" data-spotlight>
+          <div class="tl-card-head">
+            <div>
+              <h3 class="tl-role">Team Lead</h3>
+              <p class="tl-org">Indie Games Startup · Remote</p>
+            </div>
+            <span class="tl-date mono">Jan 2024 — Apr 2025</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Led a globally distributed team through end-to-end indie game development, concept to delivery.</li>
+            <li>Ran the workflow across Unreal Engine, Unity, GitHub, Discord, and Trello.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-index mono">03</div>
+        <div class="tl-card glass spotlight" data-spotlight>
+          <div class="tl-card-head">
+            <div>
+              <h3 class="tl-role">Senior Software Developer</h3>
+              <p class="tl-org">Amrita CREATE · Kerala, IN</p>
+            </div>
+            <span class="tl-date mono">Jan 2022 — Sep 2023</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Built MEDSIM, a medical VR training simulation for CPR and COVID-19 screening protocols.</li>
+            <li>Built OLABS, a WebGL VR/simulation platform for classes 6–10 science labs.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-index mono">04</div>
+        <div class="tl-card glass spotlight" data-spotlight>
+          <div class="tl-card-head">
+            <div>
+              <h3 class="tl-role">Developer — Total Cost of Ownership</h3>
+              <p class="tl-org">SAP Labs India · Bangalore, IN</p>
+            </div>
+            <span class="tl-date mono">Jul 2016 — Jan 2021</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Built Smart Buy, a markerless AR commerce solution, and Tripti, an award-winning NGO resource-mapping tool.</li>
+            <li>Developed ERP APIs, self-service configuration tools, and modernized a legacy Gantt Chart tool to UI5.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section" id="work">
+    <div class="section-head">
+      <p class="eyebrow">// 03 SELECTED WORK</p>
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="bento projects-grid">
+
+      <article class="project-card glass spotlight span-2" data-spotlight data-project="medsim" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="project-top">
+          <span class="mono cell-eyebrow">VR · HEALTHCARE TRAINING</span>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+        <h3 class="project-title">MEDSIM</h3>
+        <p class="project-desc">Medical VR training simulation for CPR and COVID-19 initial screening, built for real trainee use.</p>
+        <div class="cell-tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Oculus VR SDK</span></div>
+      </article>
+
+      <article class="project-card glass spotlight" data-spotlight data-project="olabs" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="project-top">
+          <span class="mono cell-eyebrow">WEBGL · EDTECH</span>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+        <h3 class="project-title">OLABS</h3>
+        <p class="project-desc">WebGL VR science labs for classes 6–10, from scene design to server hosting.</p>
+        <div class="cell-tags"><span class="tag">Unity</span><span class="tag">HTML5</span><span class="tag">WAMP</span></div>
+      </article>
+
+      <article class="project-card glass spotlight" data-spotlight data-project="vehicle" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="project-top">
+          <span class="mono cell-eyebrow">COMPUTER VISION</span>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+        <h3 class="project-title">Vehicle ID System</h3>
+        <p class="project-desc">Detects vehicle type, make, and color from images in real time.</p>
+        <div class="cell-tags"><span class="tag">YOLOv5</span><span class="tag">KNN</span><span class="tag">Flask</span></div>
+      </article>
+
+      <article class="project-card glass spotlight" data-spotlight data-project="surveillance" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="project-top">
+          <span class="mono cell-eyebrow">CV · ACCESS CONTROL</span>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+        <h3 class="project-title">Surveillance Suite</h3>
+        <p class="project-desc">Campus camera, face recognition, and access-control management system.</p>
+        <div class="cell-tags"><span class="tag">Flask</span><span class="tag">Django</span><span class="tag">MySQL</span></div>
+      </article>
+
+      <article class="project-card glass spotlight" data-spotlight data-project="smartbuy" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="project-top">
+          <span class="mono cell-eyebrow">AR · COMMERCE</span>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+        <h3 class="project-title">Smart Buy</h3>
+        <p class="project-desc">Markerless AR solution letting any e-commerce platform offer AR try-on.</p>
+        <div class="cell-tags"><span class="tag">Unity</span><span class="tag">Android Studio</span></div>
+      </article>
+
+      <article class="project-card glass spotlight" data-spotlight data-project="tripti" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="project-top">
+          <span class="mono cell-eyebrow">SOCIAL IMPACT · AWARD</span>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+        <h3 class="project-title">Tripti</h3>
+        <p class="project-desc">JIT resource-mapping tool for NGOs during the Kerala–Karnataka floods. Innvent 2018 winner.</p>
+        <div class="cell-tags"><span class="tag">GMaps</span><span class="tag">SAP UI5</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="contact-panel glass spotlight" data-spotlight>
+      <div class="contact-left">
+        <p class="eyebrow">// 04 CONNECT</p>
+        <h2 class="section-title">Let's build something.</h2>
+        <p class="cell-text">Open to game, XR, and applied-AI roles. Based in Ernakulam, Kerala — happy to work remote or relocate for the right team.</p>
+      </div>
+      <div class="contact-right">
+        <a class="contact-link magnetic" href="mailto:arjun.c.b.1994@gmail.com">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">arjun.c.b.1994@gmail.com</span>
+        </a>
+        <a class="contact-link magnetic" href="tel:+919400877011">
+          <span class="contact-link-label">Phone</span>
+          <span class="contact-link-value">+91 94008 77011</span>
+        </a>
+        <a class="contact-link magnetic" href="https://www.linkedin.com/in/arjun-cb-5a77b284/" target="_blank" rel="noopener">
+          <span class="contact-link-label">LinkedIn</span>
+          <span class="contact-link-value">/in/arjun-cb-5a77b284</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">© <span id="year"></span> Arjun CB — designed &amp; engineered as a single static page.</p>
+</footer>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal glass" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    </button>
+    <span class="mono cell-eyebrow" id="modalEyebrow"></span>
+    <h3 id="modalTitle" class="modal-title"></h3>
+    <p id="modalDesc" class="modal-desc"></p>
+    <div class="cell-tags" id="modalTags"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
